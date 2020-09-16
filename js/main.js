@@ -1,21 +1,13 @@
-/* ====== События браузера и страницы ===== */
+/* ====== Базовые события ===== */
 
-// $(function() {
-// 	$('p').text('DOM элементы загружены') 	
-// }); // Готовность DOM элементов 
+// $('ul li').click(function(event) {
+// 	console.log('Ты нажал на элемент');
+// 	$('ul').append('<li>Дополнительный элемент</li>');
+// });	// click()
 
-// $(window).load(function() {
-	
-// }); // Полная загрузка страницы
+function addAndStop(e) {
+	$('ul').append('<li>Дополнительный элемент</li>');
+	$('ul').off('click');
+}
 
-// $(window).unload(function(){
-// 	alert('Пользователь, пока!');
-// }) // Выход со страницы 
-
-// $(window).resize(function(event) {
-// 	console.log('размеры окна изменены!')
-// });	// Изменение размера (например, окна)
-
-// $(window).scroll(function(event) {
-// 	console.log('Страница прокручена')
-// }); // Прокрутка элемента
+$('ul').on('click', 'li', addAndStop);
