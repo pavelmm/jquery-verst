@@ -2,28 +2,29 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Lesson 5</title>
+	<title>Lesson 6</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 	<div class="container">
-		<h1>Урок 5</h1>
+		<h1>Урок 6</h1>
 		<hr>
-		<h2>Фильтры | <span>по содержимому</span></h2>
-		<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae laborum quae provident quidem, explicabo minus vel placeat enim aliquid aut aperiam id saepe omnis facilis fuga illo incidunt nobis? Harum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita doloremque nesciunt fugiat ullam rem nihil corporis iste repellendus, iure, temporibus nemo. Sit unde error consequatur rerum, mollitia excepturi sequi aliquam!</p>
-		<p class="blue-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Гор, большого, вершину переписывается сих она послушавшись, что дорогу необходимыми все, текстов повстречался рукописи моей подпоясал. Выйти осталось пояс запятых?</p>
-		<ul>
-			<li><a download href="text.doc">Ссылка на файл</a></li>
-			<li><a href="http://ya.ru">Ссылка на Yandex</a></li>
-			<li><a href="https://google.com">Ссылка на Google</a></li>
-			<li><a data-target="main" href="#">Ссылка с атрибутом data-target</a></li>
-		</ul>
-	</div>
+		<h2>Фильтры форм</h2>
+		<div class="main-form">
+			<div class="label-block"><label>Текстовое поле </label><input type="text" class="form-control"></div>
+			<div class="label-block"><label>Радио кнопки  </label><input name='radio' type="radio"><input name='radio' type="radio"></div>
+			<div class="label-block"><label>Чекбоксы  </label><input type="checkbox"></div>
+			<div class="label-block"><label>Поле для пароля</label><input type="password" class="form-control"></div>
+			<div class="label-block"><label>Поле для загрузки файла</label><input type="file" ></div>
+			<div class="label-block"><label>Кнопка сброса  </label><input type="reset" class="btn"></div>
+			<div class="label-block"><label>Поле-картинка</label><input type="image"></div>
+			<div class="label-block"><label>Недоступное поле для ввода</label><input disabled type="text" class="form-control"></div>
+			<div class="label-block"><label>Кнопка  </label><input type="button" class="btn" value='Просто кнопка'></div>
+			<div class="label-block"><label>Кнопка оптпавить  </label><input type="submit" class="btn btn-success" value="Отправить"></div>
 
-	<p></p>
+		</div>
 
 	
 	<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
