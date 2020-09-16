@@ -1,13 +1,12 @@
-/* ====== Базовые события ===== */
+/* ====== Переменные и их свойства ===== */
 
-// $('ul li').click(function(event) {
-// 	console.log('Ты нажал на элемент');
-// 	$('ul').append('<li>Дополнительный элемент</li>');
-// });	// click()
-
-function addAndStop(e) {
-	$('ul').append('<li>Дополнительный элемент</li>');
-	$('ul').off('click');
+var num = 5423; // Числа
+var str = 'Можно писать что угодно'; // Строки
+var bool = false; // Булевые значения
+var myVar = null; // Ничего :)
+var undefind = undefind; // Значение не присвоено 
+var man = {
+	name: 'Артем', 
+	age: 25,
+	message: 'привет'
 }
-
-$('ul').on('click', 'li', addAndStop);
