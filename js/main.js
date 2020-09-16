@@ -1,8 +1,10 @@
-/* Взаимодействия с элементами */
+/* Взаимодействия с элементами по атрибутам */
 
-// $('h2, p').css('border', '2px solid #000')  // Первый, второй, третий и т.д.
-$('h2 span') // outer и inner 
-$('h2 > span') // parent > child 
-$('h2 + p').css('') // prev + next 
-// $('h2 ~ p').css('border', '2px solid #000'); // prev ~ next
-$('.container  span ').css('border', '2px solid #000'); // prev ~ next
+$('a[download]').css('border', '1px solid red'); // Простой атрибут
+// $('a[href="http://ya.ru"]').css('border', '1px solid red'); // Полное соответсвие
+// $('a[href!="http://ya.ru"]').css('border', '1px solid red'); // Полное несоответствие
+// $('a[href^="http"]').css('border', '1px solid red'); // Начинается с ...
+// $('a[href$=".com"]').css('border', '1px solid red'); // Заканчивается на ... 
+// $('a[href*="google"]').css('border', '1px solid red'); // Содержит ... 
+// $('a[data-target|="main"]').css('border', '1px solid red'); // Имеет префикс - ... 
+// $('a[href][download]').css('border', '1px solid red'); // Имеет одновременно несколько атрибутов 
