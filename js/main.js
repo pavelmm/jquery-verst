@@ -1,18 +1,33 @@
-/* ====== Фильтры ===== */
+/* ====== События, связанные с мышью ===== */
 
-/* Фильтры форм в jQuery */		
+// $('button').click(function() {
+// 	console.log('Ты кликнул на кнопку');
+// }); // Клик мышью
 
-// $('input').css('border', '1px solid red'); // Все поля input 
-// $('input:button').css('border', '1px solid red'); // Поле button - простая кнопка
-// $('input:radio').css('display', 'block'); // Радио-кнопки 
-// $('input:checkbox').css('display', 'block'); // Чекбоксы
-// $('input:text').css('border', '1px solid red');// Текстовые поля для ввода
-// $('input:password').css('border', '1px solid red'); // Поле для ввода пароля
-// $('input:file').css('border', '1px solid red'); // Поле для загрузки файла
-// $('input:submit').css('border', '1px solid red'); // Кнопка "Отправить"
-// $('input:reset').css('border', '1px solid red'); // Кнопка "Сбросить"
-// $('input:image').css('border', '1px solid red'); // Кнопка-картинка 
-// $('input:focus').css('display', 'block'); // Выбранное поле (состояние фокус)
-// $('input:checked').css('border', '1px solid red'); // Выбранный чекбокс или радио-кнопка
-// $('input:enabled').css('border', '1px solid red'); // Доступное поле
-// $('input:disabled').css('border', '1px solid red'); // Недоступное поле
+// $('button').dblclick(function() {
+// 	console.log('Ты кликнул на кнопку дважды');
+// }); // Двойной клик мышью
+
+// $('ul li').mouseenter(function(event) {
+// 	$(this).css('color', 'red');
+// }); // Наведение мыши на элемент
+
+$('ul li').mousedown(function(event) {
+	$(this).css('color', 'red');
+}); // Момент нажатия кнопки мыши
+
+$('ul li').mouseup(function(event) {
+	$(this).css('color', '#333');
+}); // Момент "отжатия" кнопки мыши :)
+
+$('ul li').mouseover(function(event) {
+	$(this).css('color', 'blue');
+});  // Мышь наезжает на площадь элемента
+
+$('ul li').mouseout(function(event) {
+	$(this).css('color', 'black');
+}); // Мышь покидает площадь элемента
+
+$('ul li').mousemove(function(event) {
+	$(this).toggleClass('blue');
+}); // Движение мыши над элементом
