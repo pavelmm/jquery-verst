@@ -1,12 +1,69 @@
-/* ====== Переменные и их свойства ===== */
+/* Всё о всплывающих (модальных) окнах */
 
-var num = 5423; // Числа
-var str = 'Можно писать что угодно'; // Строки
-var bool = false; // Булевые значения
-var myVar = null; // Ничего :)
-var undefind = undefind; // Значение не присвоено 
-var man = {
-	name: 'Артем', 
-	age: 25,
-	message: 'привет'
-}
+/*$(document).ready(function() {
+ 	var modal = $('.popup'),
+ 					overlay = $('.overlay'),
+ 					link = $('button[data-popup="true"]'),
+ 					close = $('.close-btn');
+ 	link.on('click', function () {
+ 		overlay.show();
+ 		modal.show();
+ 	});
+ 	close.click(function() {
+ 		overlay.hide();
+ 		modal.hide();
+ 	});
+ });	*/ // Самый простой вариант всплывающего окна
+
+
+/*$(document).ready(function() {
+ 	var modal = $('.popup'),
+ 					overlay = $('.overlay'),
+ 					link = $('button[data-popup="true"]'),
+ 					close = $('.close-btn');
+
+ 	close.click(function() {
+ 		modal.toggleClass('popup_active');
+ 		overlay.hide();
+ 	});
+ 	link.on('click', function () {
+ 		console.log(modal);
+ 		overlay.show();
+ 		modal.toggleClass('popup_active');
+ 	});
+ });*/	// Красивое появляение окна 
+
+
+$(document).ready(function() {
+ 	var modal = $('.popup'),
+ 					overlay = $('.overlay'),
+ 					link = $('button[data-popup="true"]'),
+ 					close = $('.close-btn'),
+ 					fruitName = $('.fruit-name');
+
+ 	close.click(function() {
+ 		modal.toggleClass('popup_active');
+ 		overlay.hide();
+ 	});
+ 	link.on('click', function () {
+ 		fruitName.text($(this).attr('data-fruit'));
+ 		overlay.show();
+ 		modal.toggleClass('popup_active');
+ 	});
+ });// Много кнопок - одно окно
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
