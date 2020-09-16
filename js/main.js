@@ -1,33 +1,12 @@
-/* ====== События, связанные с мышью ===== */
+/* ====== События клавиатуры ===== */
 
-// $('button').click(function() {
-// 	console.log('Ты кликнул на кнопку');
-// }); // Клик мышью
+// $('input').keydown(function(event) {
+// 	console.log($(this).val())
+// }); // Клавиша в нажатом состоянии
 
-// $('button').dblclick(function() {
-// 	console.log('Ты кликнул на кнопку дважды');
-// }); // Двойной клик мышью
-
-// $('ul li').mouseenter(function(event) {
-// 	$(this).css('color', 'red');
-// }); // Наведение мыши на элемент
-
-$('ul li').mousedown(function(event) {
-	$(this).css('color', 'red');
-}); // Момент нажатия кнопки мыши
-
-$('ul li').mouseup(function(event) {
-	$(this).css('color', '#333');
-}); // Момент "отжатия" кнопки мыши :)
-
-$('ul li').mouseover(function(event) {
-	$(this).css('color', 'blue');
-});  // Мышь наезжает на площадь элемента
-
-$('ul li').mouseout(function(event) {
-	$(this).css('color', 'black');
-}); // Мышь покидает площадь элемента
-
-$('ul li').mousemove(function(event) {
-	$(this).toggleClass('blue');
-}); // Движение мыши над элементом
+// $('input').keyup(function(event) {
+// 	$('p').text($(this).val())
+// }); // Клавиша больше не в нажатом состоянии
+// $('input').keypress(function(eventObject) {
+// 	console.log(eventObject.which)
+// }); // Ввод символа с клавиатуры 
