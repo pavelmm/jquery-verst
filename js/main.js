@@ -1,12 +1,21 @@
-/* ====== События клавиатуры ===== */
+/* ====== События браузера и страницы ===== */
 
-// $('input').keydown(function(event) {
-// 	console.log($(this).val())
-// }); // Клавиша в нажатом состоянии
+// $(function() {
+// 	$('p').text('DOM элементы загружены') 	
+// }); // Готовность DOM элементов 
 
-// $('input').keyup(function(event) {
-// 	$('p').text($(this).val())
-// }); // Клавиша больше не в нажатом состоянии
-// $('input').keypress(function(eventObject) {
-// 	console.log(eventObject.which)
-// }); // Ввод символа с клавиатуры 
+// $(window).load(function() {
+	
+// }); // Полная загрузка страницы
+
+// $(window).unload(function(){
+// 	alert('Пользователь, пока!');
+// }) // Выход со страницы 
+
+// $(window).resize(function(event) {
+// 	console.log('размеры окна изменены!')
+// });	// Изменение размера (например, окна)
+
+// $(window).scroll(function(event) {
+// 	console.log('Страница прокручена')
+// }); // Прокрутка элемента
